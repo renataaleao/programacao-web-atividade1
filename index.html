@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshop</title>
+    <link href="style.css" rel="stylesheet" media="screen and (color)"/>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="assets/logo.png" alt="Logo MyPetShop" >
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-item" href="#">Página inicial</a>
+            <a class="cabecalho-menu-item" href="#form">Atendimento</a>
+            <a class="cabecalho-menu-item" href="#">Horários</a>
+            <a class="cabecalho-menu-item" href="#">Depoimentos</a>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <section class="conteudo-principal">
+            <img class="conteudo-principal-imagem" src="assets/animais.png" alt="Animais" >
+            <div class="conteudo-principal-escrito">
+                <h1 class="conteudo-principal-escrito-titulo">My Petshop</h1>
+                <p class="conteudo-principal-escrito-paragrafo"><small>A relação de amor e cumplicidade que temos com nossos bichinhos de estimação é um vínculo único! 
+                    Por essa razão, não medimos esforços para oferecer o que há de melhor para trazer ainda mais alegria e qualidade de vida.</small></p>
+                <button class="conteudo-principal-escrito-botao">Nos chame</button>
+            </div>
+            
+        </section>
+
+        <section class="conteudo-secundario">
+            <h2 class="conteudo-secundario-titulo">Serviços</h2>
+            
+            <div>
+                <img src="assets/pethotel.jpg" alt="Pet Hotel">
+                <h3>Hospedagem</h3>
+                <p>O hotel que seu bixinho merece: um lar como o seu.</p>
+                <button>contratar</button>
+                
+            </div>
+            <div>
+                <img src="assets/pet banho.jpg" alt="Pet Banho">
+                <h3>Banho e Toza</h3>
+                <p>Deixando seu bixinho cheiroso e arrumadinho.</p>
+                <button>contratar</button>
+            </div>
+            <div>
+                <img src="assets/pet vet.jpg" alt="Pet Vet">
+                <h3>Veterinária</h3>
+                <p>Receba, em casa, o cuidado que seu pet merece!</p> 
+                <button>contratar</button>
+            </div>
+        </section>
+
+        <section id="form" class="formulario">
+
+            <h1>Entre em contato</h1>
+            <form>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nomeid" required="required" name="nome" />
+                </div>
+                
+                <div>
+                    <label for="fone">Telefone</label>
+                    <input type="tel" id="foneid" name="fone" />
+                </div>
+                
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="emailid" name="email" />
+                </div>
+                
+                <div>
+                    <label for="city">Cidade</label>
+                    <select id="city" name="Cidade">
+                        <option value="campina grande">Campina Grande</option>
+                        <option value="joão pessoa">João Pessoa</option>
+                    </select>
+                </div>
+                
+                <div class="button">
+                    <input type="button" class="enviar" onclick="Enviar();" value="Enviar" />
+                </div>
+                
+              </form>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>Contato: sac@mypetshop.com.br</p>
+        <img src="assets/redes.png" alt="Redes" width="100px" height="50px">
+    </footer>
+
+</body>
+</html>
